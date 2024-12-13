@@ -14,9 +14,10 @@
 
 It is used to show up history from the user with respect to the AI, following are list of message objects
 
-**Functionality:**   Each message object will contain a `role` (user, assistant, or system) along with its respective `content`.
+**Functionality:**  
+ - Each message object will contain a `role` (user, assistant, or system) along with its respective `content`.
 
-- The `system` role specifies instructions, the `user` role specifies prompts, and the `assistant` role specifies AI's responses.
+ - The `system` role specifies instructions, the `user` role specifies prompts, and the `assistant` role specifies AI's responses.
 
 **Example:**
 
@@ -62,9 +63,10 @@ It limits the number of tokens (words/characters) the AI can generate in a singl
 
 It controls how many completion variations are returned for every prompt.
 
-**Functionality:**  Useful for exploring different outputs, such as ways for: to phrase an answer
+**Functionality:**
+ - Useful for exploring different outputs, such as ways for: to phrase an answer
 
-  More variations are produced with higher `n` values, increasing resource consumption.
+ - More variations are produced with higher `n` values, increasing resource consumption.
 
 **Example:** `n=3` returns three distinct completions.
 
@@ -73,7 +75,8 @@ It controls how many completion variations are returned for every prompt.
 
 It allows streaming of responses as they are generated, instead of having the full response.
 
-**Functionality:**  When set to `true`, the API returns tokens as they are generated. Increases user experience for longer output
+**Functionality:**
+ - When set to `true`, the API returns tokens as they are generated. Increases user experience for longer output
 
 **Example:** `stream=true`
 
@@ -82,7 +85,8 @@ It allows streaming of responses as they are generated, instead of having the fu
 
 It controls the randomness of the output.
 
-**Functionality:**  The lower the value, the more deterministic and focused the response will be, e.g., when using `0.2`.
+**Functionality:** 
+ - The lower the value, the more deterministic and focused the response will be, e.g., when using `0.2`.
 
 - Greater values (e.g., `0.8`) involve more creativity and more variety.
 
