@@ -10,7 +10,7 @@
  - Top_p
  - Tools
 
-**1. Messages**
+### **1. Messages**
 
 It is used to show up history from the user with respect to the AI, following are list of message objects
 
@@ -33,7 +33,7 @@ It is used to show up history from the user with respect to the AI, following ar
 
   ```
 
-**2. Model**
+### **2. Model**
 
 It Specifies which AI model to use for generating responses.
 
@@ -46,7 +46,7 @@ It Specifies which AI model to use for generating responses.
  **Example:** `model="gpt-3.5-turbo"`
 
 
-**3. Max Completion Tokens**
+### **3. Max Completion Tokens**
 
 It limits the number of tokens (words/characters) the AI can generate in a single response.
 
@@ -59,7 +59,7 @@ It limits the number of tokens (words/characters) the AI can generate in a singl
 **Example:** `max_tokens=100`
 
 
-**4. n**
+### **4. n**
 
 It controls how many completion variations are returned for every prompt.
 
@@ -71,7 +71,7 @@ It controls how many completion variations are returned for every prompt.
 **Example:** `n=3` returns three distinct completions.
 
 
-**5. Stream**
+### **5. Stream**
 
 It allows streaming of responses as they are generated, instead of having the full response.
 
@@ -81,7 +81,7 @@ It allows streaming of responses as they are generated, instead of having the fu
 **Example:** `stream=true`
 
 
-**6. Temperature**
+### **6. Temperature**
 
 It controls the randomness of the output.
 
@@ -93,7 +93,7 @@ It controls the randomness of the output.
 **Example:** `temperature=0.7`
 
 
- **7. Top_p**
+ ### **7. Top_p**
 
 - Purpose: It controls the diversity of the output by operating with nucleus sampling.
 
@@ -102,7 +102,7 @@ It controls the randomness of the output.
 **Example:** `top_p=0.9`
 
 
-**8. Tools**
+### **8. Tools**
 
 It is used to integrates external tools or plugins the AI can use to enhance responses.
 
