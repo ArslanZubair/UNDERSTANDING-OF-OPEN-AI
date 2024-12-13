@@ -12,7 +12,7 @@
 
 ## **1. Messages**
 
-It is used to show up history from the user with respect to the AI, following are list of message objects
+It is used to show up history from the user with respect to the AI.
 
 **Functionality:**  
  - Each message object will contain a `role` (user, assistant, or system) along with its respective `content`.
