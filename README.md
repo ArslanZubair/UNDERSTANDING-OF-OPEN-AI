@@ -10,7 +10,7 @@
  - Top_p
  - Tools
 
-1. Messages
+**1. Messages**
 
 It is used to show up history from the user with respect to the AI, following are list of message objects
 
@@ -18,7 +18,7 @@ It is used to show up history from the user with respect to the AI, following ar
 
 - The `system` role specifies instructions, the `user` role specifies prompts, and the `assistant` role specifies AI's responses.
 
-- Example:
+**Example:**
 
   ```json
 
@@ -36,57 +36,57 @@ It is used to show up history from the user with respect to the AI, following ar
 
 It Specifies which AI model to use for generating responses.
 
-- Functionality:  
+**Functionality:**  
 
   - Different models have different capabilities, latency, and costs (e.g., `gpt-4`, `gpt-3.5-turbo`).
 
   - Affects the quality and depth of responses.
 
-- Example: `model="gpt-3.5-turbo"`
+ **Example:** `model="gpt-3.5-turbo"`
 
 
 **3. Max Completion Tokens**
 
 It limits the number of tokens (words/characters) the AI can generate in a single response.
 
-- Functionality:  
+**Functionality:**  
 
   - A higher value allows longer responses but consumes more computational resources.
 
 - Total tokens add input + output tokens; capped at the model's maximum token limit.
 
-- Example: `max_tokens=100`
+**Example:** `max_tokens=100`
 
 
 **4. n**
 
 It controls how many completion variations are returned for every prompt.
 
-Functionality:  Useful for exploring different outputs, such as ways for: to phrase an answer
+**Functionality:**  Useful for exploring different outputs, such as ways for: to phrase an answer
 
   More variations are produced with higher `n` values, increasing resource consumption.
 
-- Example: `n=3` returns three distinct completions.
+**Example:** `n=3` returns three distinct completions.
 
 
 **5. Stream**
 
 It allows streaming of responses as they are generated, instead of having the full response.
 
-- Functionality:  When set to `true`, the API returns tokens as they are generated. Increases user experience for longer output
+**Functionality:**  When set to `true`, the API returns tokens as they are generated. Increases user experience for longer output
 
-- Example: `stream=true`
+**Example:** `stream=true`
 
 
 **6. Temperature**
 
 It controls the randomness of the output.
 
-- Functionality:  The lower the value, the more deterministic and focused the response will be, e.g., when using `0.2`.
+**Functionality:**  The lower the value, the more deterministic and focused the response will be, e.g., when using `0.2`.
 
 - Greater values (e.g., `0.8`) involve more creativity and more variety.
 
-- Example: `temperature=0.7`
+**Example:** `temperature=0.7`
 
 
  **7. Top_p**
@@ -95,19 +95,19 @@ It controls the randomness of the output.
 
 - How it works:  Only considers the top `p` probability mass of token options. It can be used as an alternative to temperature; the values around `1.0` includes all the token options, while smaller values (for example, `0.3`) limit the pool.
 
-- Example: `top_p=0.9`
+**Example:** `top_p=0.9`
 
 
 **8. Tools**
 
 It is used to integrates external tools or plugins the AI can use to enhance responses.
 
-Functionality:  
+**Functionality:**  
 
   - Allows the model to perform actions like querying databases, retrieving live information, or executing tasks.
 
   - Examples: Browsers, calculators, or custom APIs integrated via tool definitions.
 
-- Example: Providing a tool for math calculations ensures accurate results beyond the model’s language capabilities.
+ **Example:** Providing a tool for math calculations ensures accurate results beyond the model’s language capabilities.
 
 
